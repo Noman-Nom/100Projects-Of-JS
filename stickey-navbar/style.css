@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-continer {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.top-continer h1 {
+  color: rgb(255, 28, 28);
+  font-size: 55px;
+  font-family: sssssssssans-serif;
+  letter-spacing: 3px;
+}
+
+.navbar img {
+  width: 10%;
+  height: 9%;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.text {
+  margin: 50px 5%;
+  font-family: cursive;
+  text-align: justify;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(152, 245, 245, 0.5);
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 30px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(8, 8, 8);
+  font-family: cursive;
+}
+.navbar ul li a:hover {
+  color: rgb(255, 27, 107);
+}
+.navbar.active {
+  background-color: rgba(18, 18, 18, 0.5);
+}
+.navbar.active ul li a {
+  color: azure;
+}
+.navbar.active ul li a:hover {
+  color: rgb(255, 27, 107);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="javascript/react">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        .container {
+            padding: 64px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgb(244, 243, 241);
+            width: 700px;
+            margin: 0px auto;
+            margin-top: 56px;
+
+        }
+
+        .container__input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .container__input label {
+            font-size: 36px;
+            font-weight: 500;
+            font-family: sans-serif;
+            line-height: 32px;
+
+        }
+
+        .container__input input {
+            font-size: 36px;
+            font-weight: 500;
+            font-family: sans-serif;
+            line-height: 32px;
+            /* outline: none; */
+            width: 300px;
+            height: 300;
+            background: rgb(160, 153, 153);
+            border: 1px solid white;
+            border-radius: 56px;
+            padding: 20px 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__input">
+            <label for="celcius">Celcius</label>
+            <input type="number" value="0" id="celcius">
+        </div>
+        <div class="container__input">
+            <label for="farenhiet">Farenhiet</label>
+            <input type="number" value="32" id="farenhiet">
+        </div>
+    </div>
+    <script>
+
+        var farenhiet = document.getElementById('farenhiet');
+        var celcius = document.getElementById('celcius');
+
+        celcius.addEventListener('input', function () {
+            // console.log('clicked') 
+            // for checking
+            const c = this.value;
+            // console.log(c);
+            const f = (c * 9 / 5) + 32;
+
+           
+            farenhiet.value = f.toFixed(4);
+
+        });
+        farenhiet.addEventListener('input', function () {
+            // console.log('clicked')
+
+            const f = this.value;
+            const c = (f - 32) * 5 / 9;
+           
+            celcius.value = c.toFixed(4);
+
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
