@@ -5,9 +5,9 @@ form.addEventListener('submit', (e)=>{
 
     e.preventDefault()
 
-const vi = parseFloat(document.querySelector('#vi').value)
-const a = parseFloat(document.querySelector('#a').value)
-const t = parseFloat(document.querySelector('#t').value)
+let vi = parseFloat(document.querySelector('#vi').value)
+let a = parseFloat(document.querySelector('#a').value)
+let t = parseFloat(document.querySelector('#t').value)
 
 const vf = document.querySelector('#vf')
 
@@ -27,6 +27,10 @@ else{
    vf.value = result
    console.log(result)
    console.log(typeof result)
+
+  
+
+  
 }
 
 console.log("vi = " , vi)
