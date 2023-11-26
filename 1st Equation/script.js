@@ -9,6 +9,8 @@ const vi = parseFloat(document.querySelector('#vi').value)
 const a = parseFloat(document.querySelector('#a').value)
 const t = parseFloat(document.querySelector('#t').value)
 
+const vf = document.querySelector('#vf')
+
 if( isNaN(vi) || vi === '' ){
                 alert('please enter a valid input')
 }
@@ -20,7 +22,11 @@ else if(isNaN(t) || t === ''){
 }
 
 else{
-    console.log("good boy")
+   const result =(vi + a*t).toFixed(2)
+
+   vf.value = result
+   console.log(result)
+   console.log(typeof result)
 }
 
 console.log("vi = " , vi)
