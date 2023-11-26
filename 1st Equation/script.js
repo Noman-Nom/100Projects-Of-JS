@@ -33,9 +33,17 @@ else{
   
 }
 
-console.log("vi = " , vi)
-console.log("a = " , a)
-console.log("t = " , t )
+             document.getElementById('vi').value = '';
+            document.getElementById('a').value = '';
+            document.getElementById('t').value = '';
+
+
+
+
+
+// console.log("vi = " , vi)
+// console.log("a = " , a)
+// console.log("t = " , t )
 
 // console.log(typeof vi)
 // console.log(typeof a)
