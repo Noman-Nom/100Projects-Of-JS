@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Negative Calculator</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Negative Calculator</h2>
+
+    <label for="matrix">Enter 4x4 Matrix (Values 0 to 15):</label>
+    <table id="matrix">
+        <!-- Matrix content will be dynamically generated here -->
+    </table>
+
+    <button onclick="calculateNegative()">Calculate Negative</button>
+
+    <h3>Result:</h3>
+    <table id="resultMatrix">
+        <!-- Result matrix content will be dynamically generated here -->
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
